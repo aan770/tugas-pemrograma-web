@@ -1,0 +1,64 @@
+/* Layout */
+header { 
+    background: #280872; 
+    color: #fff; 
+    padding: 15px 20px; 
+    font-size: 20px; 
+}
+
+aside { 
+    flex: 20%; 
+    background: #222; 
+}
+
+section.main { 
+    flex: 80%; 
+    background: #fff; 
+    min-height: 530px; 
+    padding: 15px 20px; 
+    flex-grow: 1; 
+}
+
+footer { 
+    background: #ccc; 
+    color: #555; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+/* Layout pada layar kecil (responsive) */
+@media (max-width: 700px) { 
+    .container { 
+        flex-direction: column; 
+    } 
+}
+
+/* Navigasi */
+.menu { 
+    padding: 0; 
+}
+
+.menu li { 
+    border-bottom: 1px dotted #444; 
+}
+
+.menu a { 
+    display: block; 
+    padding: 20px 20px; 
+    list-style: none; 
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.menu a:hover { 
+    background: #000; 
+}
+
+.menu a.aktif { 
+    background-color: #444; /* Menambahkan gaya untuk link yang aktif */
+}
+
+/* Tambahkan display flex pada container */
+.container { 
+    display: flex; 
+}
